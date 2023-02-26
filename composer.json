@@ -1,17 +1,18 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "danpalmieri/laravel-custom-domains",
+    "description": "A package to connect the Cloudflare custom domain service to a Laravel application.",
     "keywords": [
-        ":vendor_name",
+        "danpalmieri",
         "laravel",
-        ":package_slug"
+        "laravel-custom-domains",
+        "cloudflare"
     ],
     "homepage": "https://github.com/:vendor_slug/:package_slug",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Dan Palmieri",
+            "email": "contato@danpalmieri.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "DanPalmieri\\CustomDomains\\": "src",
+            "DanPalmieri\\CustomDomains\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "DanPalmieri\\CustomDomains\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "DanPalmieri\\CustomDomains\\CustomDomainsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "CustomDomains": "DanPalmieri\\CustomDomains\\Facades\\CustomDomains"
             }
         }
     },
